@@ -29,14 +29,26 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+The biggest difference between .map and .forEach is that .map will create a brand new array, leaving the old array in tact, while .forEach will apply any changes made to the original array.
 
 2. What is the difference between a function and a method?
+Functions - can live and work alone.  Also returns a value and can be called by name.  
+Method - always attached to an object and cannot live or work alone.  Method is essentially a function attached to an object.
 
 3. What is closure?
+Closure gives you access to functions that are deep nested into other functions, rendering them unable to be called unless closure on the function is ran to allow access to the global scope.
 
 4. Describe the four rules of the 'this' keyword.
+Window - When this "this" keyword is called in the global scope, and is not bound to anything specific, it is considered Window Bound.
+--
+Implicit - To the left! With implicit bindins you can always look to the left of the dot (.) when a method is called.
+--
+New Binding - When invoking a new object with the "this" keyword, that is considered a new binding.
+--
+Explicit - Just like it sounds, when you explicitly give the this keyword a value, that is considered explicit binding.
 
 5. Why do we need super() in an extended class?
+The need for super() comes in when you need to call/access the functions from a parent object.  Without the super() constructor, child objects would not be able to utilize the values in it's parent.
 
 ## Project Set up
 
