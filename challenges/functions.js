@@ -32,7 +32,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-
+// The 'nestedFunction()' is accessible only because myFunction() is called at the global scope, allowing the child of myFunction to be called outside in the open world.  Without calling myFunction() after the nestedFunction() as well as outside the function, nestedFunction() would be invisible.
 
 const external = "I'm outside the function";
 
